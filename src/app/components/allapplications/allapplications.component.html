@@ -1,0 +1,26 @@
+
+<div class="container ">
+  <div class="d-flex align-items-center justify-content-between gap-5 mt-5">
+    <h1 class="mx-auto">All Applications</h1>
+  </div>
+
+  <div class="row justify-content-center">
+   @for (item of result ; track item) {
+    <div class="col-lg-6 col-md-12 ">
+      <div class="card m-5 shadow-lg bg-body-secondary" style="width: 18rem;">
+
+        <div class="card-body">
+          <h3 class="card-title">{{item.name}}</h3>
+          <p class="card-text"><strong>Email:</strong> {{item.email}}</p>
+          <p class="card-text"><strong>Resume Url:</strong> {{item.resumeUrl}}</p>
+       </div>
+
+      </div>
+      </div>
+   }
+
+
+  </div>
+
+
+</div>

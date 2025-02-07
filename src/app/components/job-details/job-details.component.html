@@ -1,0 +1,10 @@
+<div class="card w-75 mt-5 mx-auto shadow-lg bg-body-secondary" >
+  <div class="card-body">
+    <h4 class="card-title">{{jdetails.title}}</h4>
+    <h5 class="card-subtitle mb-2 text-body-secondary">company:{{jdetails.company}}</h5>
+    <h6 class="card-subtitle mb-2 text-body-tertiary">location:{{jdetails.location}}</h6>
+    <p class="card-text"><strong>Description</strong>{{jdetails.description}}</p>
+    <p class="card-text"><strong style="color: alert-primary;">Requirements</strong>{{jdetails.requirements}}</p>
+    <a href="#" (click)="Applyjob(jdetails.jobId)" routerLink="apply"  class="btn btn-primary">Apply</a>
+  </div>
+</div>

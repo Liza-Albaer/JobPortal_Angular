@@ -1,0 +1,27 @@
+
+<div class="container ">
+  <div class="d-flex align-items-center justify-content-between gap-5 mt-5">
+    <h1>Show Details</h1>
+    <a href="#" routerLink="addjob" (click)="goToaddjob()" class="btn btn-success">Add Job</a>
+  </div>
+
+  <div class="row justify-content-center">
+   @for (item of result ; track item) {
+    <div class="col-lg-6 col-md-12 ">
+      <div class="card m-5 shadow-lg bg-body-secondary" style="width: 18rem;">
+
+        <div class="card-body">
+          <h3 class="card-title">{{item.title}}</h3>
+          <p class="card-text"><strong>Company:</strong> {{item.company}}</p>
+          <p class="card-text"><strong>Location:</strong> {{item.location}}</p>
+          <a href="#" (click)="goToDetails(item.jobId)" routerLink="jobdetails"  class="btn btn-primary">Details</a>
+        </div>
+      </div>
+      </div>
+   }
+
+
+  </div>
+
+
+</div>
